@@ -84,18 +84,8 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "coverage": true,
+            "detectOpenHandles": true
           }
         },
         "lint": {
@@ -141,9 +131,8 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "projects/lib/src/test.ts",
-            "tsConfig": "projects/lib/tsconfig.spec.json",
-            "karmaConfig": "projects/lib/karma.conf.js"
+            "coverage": true,
+            "detectOpenHandles": true
           }
         },
         "lint": {
